@@ -26,4 +26,5 @@ class BankAccount {
 		//account action
 		void deposit(double amount);
 		void widthdraw(double amount);
+		void transfer(double amount, BankAccount& recipient);
 };

@@ -14,9 +14,15 @@ BankAccount::BankAccount(string name, double startingBalance) {
 void BankAccount::setOwner(string name) {
     owner = name;
 }
-string BankAccount::getOwner() {
+
+string BankAccount::getOwner() const {
     return owner;
 }
+
+double BankAccount::getBalance() const {
+    return balance;
+}
+
 void BankAccount::deposit(double amount) {
     if(amount > 0) {
         balance += amount;
@@ -26,4 +32,8 @@ void BankAccount::widthdraw(double amount) {
     if(amount > 0 && amount <= balance) {
         balance -= amount;
     }
+}
+
+void BankAccount::transfer(double amount) {
+
 }

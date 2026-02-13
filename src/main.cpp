@@ -12,6 +12,8 @@ int main() {
 	account1.deposit(200);
 	account1.deposit(100);
 
+	account1.transfer(150, account2);
+
 	cout << account1.getOwner() << "'s balance: $" << account1.getBalance() << endl;
 	cout << account2.getOwner() << "'s balance: $" << account2.getBalance() << endl;
 
